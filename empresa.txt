@@ -1,0 +1,52 @@
+import java.util.Scanner;
+
+public class Empresa{
+  public static void main(String args[]){
+   Scanner in = new Scanner(System.in);
+   String nombre = "";
+   int clave = 0;
+   int antiguedad = 0;
+
+   System.out.println("Bienvenido al sistema vacacional de Coca-Cola Company");
+   System.out.println("Cual es el nombre del trabajador");
+
+   nombre = in.nextLine();
+
+   System.out.println("Cuantos años de servicio tiene el trabajador");
+   antiguedad = in.nextInt();
+
+   System.out.println("Cual es la clave de su departamento");
+   clave = in.nextInt();
+
+   if (clave == 1) {
+     if (antiguedad == 1){
+       System.out.println("El nombre del trabajador es: " + nombre + " y los dias de vacaciones a los que tienes derecho es 6");
+     } else (antiguedad >= 2) && (antiguedad <= 6){
+       System.out.println("El nombre del trabajador es: " + nombre + " y los dias de vacaciones a los que tienes derecho es 14");
+     } else (antiguedad >= 7) {
+       System.out.println("El nombre del trabajador es: " + nombre + " y los dias de vacaciones a los que tienes derecho es 20");
+     }
+   
+   } else (clave == 2) {
+     if (antiguedad == 1){
+       System.out.println("El nombre del trabajador es: " + nombre + " y los dias de vacaciones a los que tienes derecho es 7");
+     } else (antiguedad >= 2) && (antiguedad <= 6){
+       System.out.println("El nombre del trabajador es: " + nombre + " y los dias de vacaciones a los que tienes derecho es 15");
+     } else (antiguedad >= 7) {
+       System.out.println("El nombre del trabajador es: " + nombre + " y los dias de vacaciones a los que tienes derecho es 22");
+     }
+   
+   } else (clave == 3) {
+     if (antiguedad == 1){
+       System.out.println("El nombre del trabajador es: " + nombre + " y los dias de vacaciones a los que tienes derecho es 10");
+     } else (antiguedad >= 2) && (antiguedad <= 6){
+       System.out.println("El nombre del trabajador es: " + nombre + " y los dias de vacaciones a los que tienes derecho es 20");
+     } else (antiguedad >= 7) {
+       System.out.println("El nombre del trabajador es: " + nombre + " y los dias de vacaciones a los que tienes derecho es 30");
+     }
+   
+   } else {
+       System.out.println("Clave no existe");
+   }
+ }
+}
