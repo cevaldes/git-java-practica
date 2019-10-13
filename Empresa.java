@@ -12,7 +12,7 @@ public class Empresa{
 
    nombre = in.nextLine();
 
-   System.out.println("Cuantos años de servicio tiene el trabajador");
+   System.out.println("Cuantos aÃ±os de servicio tiene el trabajador:");
    antiguedad = in.nextInt();
 
    System.out.println("Cual es la clave de su departamento");
@@ -26,7 +26,7 @@ public class Empresa{
      } else if (antiguedad >= 7) {
        System.out.println("El nombre del trabajador es: " + nombre + " y los dias de vacaciones a los que tienes derecho es 20");
      }
-   
+
    } else if (clave == 2) {
      if (antiguedad == 1){
        System.out.println("El nombre del trabajador es: " + nombre + " y los dias de vacaciones a los que tienes derecho es 7");
@@ -35,7 +35,7 @@ public class Empresa{
      } else if (antiguedad >= 7) {
        System.out.println("El nombre del trabajador es: " + nombre + " y los dias de vacaciones a los que tienes derecho es 22");
      }
-   
+
    } else if (clave == 3) {
      if (antiguedad == 1){
        System.out.println("El nombre del trabajador es: " + nombre + " y los dias de vacaciones a los que tienes derecho es 10");
@@ -44,7 +44,7 @@ public class Empresa{
      } else if (antiguedad >= 7) {
        System.out.println("El nombre del trabajador es: " + nombre + " y los dias de vacaciones a los que tienes derecho es 30");
      }
-   
+
    } else {
        System.out.println("Clave no existe");
    }
